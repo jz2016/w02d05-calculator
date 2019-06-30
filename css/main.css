@@ -34,6 +34,8 @@
 	display: inline-block;
 	line-height: 10px;
 	font-size: 30px;
+	box-shadow: 0px 6px 6px 0px;
+	border-radius: 50%;
 }
 
 .operator {
@@ -46,6 +48,7 @@
 	margin: 8px;
 	line-height: 10px;
 	font-size: 30px;
+	box-shadow: 0px 6px 6px 0px;
 }
 
 #equals {
@@ -53,10 +56,12 @@
 	width: 440px;
 	margin: 5px 8px 5px 8px;
 	background-color: #99B0FF;
+	box-shadow: 0px 6px 6px 0px;
 }
 
 #clear {
 	align-content: right;
+	box-shadow: 0px 6px 6px 0px;
 }
 
 
