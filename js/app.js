@@ -11,19 +11,13 @@ function clearScreen(){
 	$(display).empty()
 }
 
-function calculate(){
-	if((eval(display.innterHTML)) % Math.floor(eval(display.innerHTML)) !== 0){
-	const computeValueWithDecimal = eval(display.innerHTML).toFixed(2);
-	display.innerHTML = computeValueWithDecimal;
-	buttonsPressed = [];
-	} else {
-		const computeValue = eval(display.innerHTML).toFixed(0);
+ function calculate(){
+ 	 const computeValue = eval(display.innerHTML).toFixed(2);
 		display.innerHTML = computeValue;
 		buttonsPressed = [];
-	}
 }
 
-// I was not able to figure out how to adjust the calculated output to have
+// For the code block below. I was not able to figure out how to adjust the calculated output to have
 // no decimal places if no decimal was present in the equation in the 
 // screen. My goal was to have the output value have 2 decimal places
 // if a decimal was present, but no decimals in the outupt value if
@@ -31,6 +25,18 @@ function calculate(){
 // my calculate function, but had no luck in getting those conditions to 
 // stick. Right now the output value will always contain two decimal places,
 // even if the value is a whole number.
+
+// function calculate(){
+// 	if((eval(display.innterHTML)) % Math.floor(eval(display.innerHTML)) !== 0){
+// 	const computeValueWithDecimal = eval(display.innerHTML).toFixed(2);
+// 	display.innerHTML = computeValueWithDecimal;
+// 	buttonsPressed = [];
+// 	} else {
+// 		const computeValue = eval(display.innerHTML).toFixed(0);
+// 		display.innerHTML = computeValue;
+// 		buttonsPressed = [];
+// 	}
+// }
 
 // The code below was what I oringally had active in the code, but 
 // any equations with decimals was displaying an output where there was
