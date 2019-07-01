@@ -8,13 +8,13 @@ function displayButtonPressed(num) {
 }
 
 function clearScreen(){
-	$(display).empty()
+	$(display).empty();
+	buttonsPressed = [];
 }
 
  function calculate(){
  	 const computeValue = eval(display.innerHTML).toFixed(2);
 		display.innerHTML = computeValue;
-		buttonsPressed = [];
 }
 
 // For the code block below. I was not able to figure out how to adjust the calculated output to have
